@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 export const API_BASE_URL = "https://node-postgresql-zs8l.onrender.com/";

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   Table,
   TableBody,
@@ -28,7 +28,7 @@ export function StudentsTable() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [btnType, setBtnType] = useState<'add' | 'edit'>('add');
   const [studentsData, setStudentsData] = useState<Student[]>([]);
-  const [editItem, setEditItem] = useState<Student | null>(null);
+  const [editItem, setEditItem] = useState<Student>({ id: '', studentName: '', cohort: '', courses: [], joinDate: '', lastLogin: '', status: '' });
 
   const [cohortFilter, setCohortFilter] = useState<string>('');
   const [courseFilter, setCourseFilter] = useState<string>('');
